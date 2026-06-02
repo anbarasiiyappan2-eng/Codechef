@@ -1,0 +1,17 @@
+import java.util.*;
+
+class LuckyFour {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();   // number of test cases
+        while(T-- > 0) {
+            int num = sc.nextInt();
+            int count = 0;
+            while(num > 0) {
+                if(num % 10 == 4) count++;
+                num /= 10;
+            }
+            System.out.println(count);
+        }
+    }
+}
