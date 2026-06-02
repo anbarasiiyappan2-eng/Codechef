@@ -1,0 +1,22 @@
+import java.util.*;
+class Codechef
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();   
+        while(T-- > 0)
+        {
+            double quantity = sc.nextDouble();
+            double price = sc.nextDouble();
+            
+            double total;
+            if(quantity > 1000)
+                total = quantity * price * 0.9; 
+            else
+                total = quantity * price;
+            
+            System.out.println(total);
+        }
+    }
+}
