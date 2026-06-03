@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();   
+        while(T-- > 0)
+        {
+            double salary = sc.nextDouble();
+            double hra, da, gross;
+
+            if(salary < 1500)
+            {
+                hra = 0.10 * salary;
+                da = 0.90 * salary;
+            }
+            else
+            {
+                hra = 500;
+                da = 0.98 * salary;
+            }
+
+            gross = salary + hra + da;
+            System.out.printf("%.2f\n", gross);   
+        }
+    }
+}
