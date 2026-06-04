@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int X=sc.nextInt();
+				int Y=sc.nextInt();
+						int Z =sc.nextInt();
+						
+						if(Z<=50)
+						{System.out.println(X);
+						}
+						else{
+						    System.out.println(X + (Z - 50) * Y);
+						}
+						
+
+
+
+	}
+}
